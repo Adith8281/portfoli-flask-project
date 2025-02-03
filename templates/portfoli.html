@@ -9,13 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
-            background: url('img/keyboard.jpg') no-repeat center center/cover;
+            background: url('../static/img/keyboard.jpg') no-repeat center center/cover;
             text-align: center;
             font-family: "Times New Roman", serif;
             color: white;
         }
-
-       
         nav {
             position: fixed;
             top: 0;
@@ -24,6 +22,7 @@
             padding: 15px 0;
             z-index: 1000;
         }
+        
         .nav-container {
             display: flex;
             justify-content: space-between;
@@ -32,235 +31,175 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
-        }
-        .logo span {
-            color: blue;
-        }
+        
         .links {
             display: flex;
             gap: 20px;
         }
-        .link a {
+        
+        .links a {
             text-decoration: none;
             color: white;
             font-size: 1rem;
             font-weight: 500;
             transition: color 0.3s ease-in-out;
         }
-        .link a:hover {
+        
+        .links a:hover {
             color: blue;
         }
-
+        
+       
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
-                text-align: center;
+                align-items: center;
             }
             .links {
-                margin-top: 10px;
                 flex-direction: column;
+                text-align: center;
                 gap: 10px;
             }
         }
-
-
-        .round-image {
-            position: relative;
-            bottom: 40px;
-            left: 760px;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%; 
-        }
-
-        .content {
-            padding-top: 120px;
-            height: 100vh;
+        .image-container { 
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
         }
-        h1 {
-            font-size: 2.5rem;
+        
+        .round-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
         }
-        .typewriter {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-top: 20px;
-            color: yellow;
-            text-shadow: 0 0 10px yellow;
-            display: inline-block;
-            animation: moveText 2s infinite ease-in-out;
-        }
-        @keyframes moveText {
-            0% { transform: translateX(0); }
-            80% { transform: translateX(15px); }
-            100% { transform: translateX(0); }
-        }
-
-        .container1 {
-            background: url('img/about.webp') no-repeat center center/cover;
+        
+        .container1{
+            background: url('../static/img/about.webp') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             padding: 50px;
+            text-align: center;
         }
+        
         .container1 h2 {
             color: yellow;
+            font-size: 2rem;
         }
+        
         .container1 p {
             font-size: 1.2rem;
             max-width: 700px;
-            margin: auto;
             color: whitesmoke;
         }
-
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-   
-}
-
-
-.skill-container {
-    position: relative;
-    bottom: 110px;
-    background-image: url(img/OPI.jpg);
-    max-width: 100%;
-    height: 100vh;
-    background-size: cover; 
-    background-position: center;
-    margin: 0;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-}
-
-
-.skill-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%; 
-}
-
-
-.progress {
-    height: 20px; 
-    background: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 100%; 
-}
-
-.progress-bar {
-    height: 100%;
-    background: green;
-    width: 50%; 
-}
-
-
-.container11 {
-    background-image: url('img/education.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    bottom: 180px;
-}
-
-
-.education-card {
-    background: linear-gradient(135deg, #222, #444);
-    border-radius: 10px;
-    box-shadow: 0 6px 12px black;
-    color: white;
-    
-}
-
-.education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(19, 5, 5, 0.4);
-}
-
-.card-title {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 18px;
-    opacity: 0.8;
-}
-
-.num {
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-.one{
-    position: relative;
-    align-items: center;
-    left: 600px;
-    padding: 20px;
-}
-.two{  position: relative;
-    align-items: center;
-    left: 600px;
-    padding: 20px;
-}
-
-
-    .three{position: relative;
-        align-items: center;
-        left: 600px;
-        padding: 20px;
-    }
-
-    .container12 {
-        align-items: center;
-        position: relative;
-        bottom: 300px;
-        background-image: url(img/old-contact.webp);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .footer{
-        background-image: url('img/footer.webp');
-        background-size: cover;
-        background-position: center; 
-        color: white; 
-        height: 500px;; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        position: relative;
-        bottom: 350px;
-    }
+        
+        @media (max-width: 768px) {
+            .container1 {
+                padding: 20px;
+                height: auto;
+            }
+            .container1 h2 {
+                font-size: 1.5rem;
+            }
+            .container1 p {
+                font-size: 1rem;
+            }
+        }
+        .skill-container {
+            background-image: url('../static/img/OPI.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .skill-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 90%;
+        }
+        
+        .progress {
+            height: 20px;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 80%;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: green;
+            width: 50%;
+        }
+        
+        @media (max-width: 768px) {
+            .skill-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .progress {
+                width: 90%;
+            }
+        }
+        .education-card {
+            background: linear-gradient(135deg, #222, #444);
+            border-radius: 10px;
+            box-shadow: 0 6px 12px black;
+            color: white;
+            padding: 20px;
+            width: 90%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .one, .two, .three {
+                left: 0;
+                width: 100%;
+            }
+        }
+        .container12 {
+            background-image: url('../static/img/old-contact.webp');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer {
+            background-image: url('../static/img/footer.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .footer {
+                height: auto;
+            }
+        }
+                                                                                         
 
     </style>
 </head>
 <body>
 
 
-            <!-- My Navgation-Bar -->
+           
    
     <nav>
         <div class="nav-container">
@@ -276,17 +215,17 @@ html, body {
     </nav>
 
 
-        <!-- My First-Page, moving text design page -->
+       
 
     <div class="content">
-        <img src="img/my pic.jpg" alt="Adith K.K" class="round-image">
+        <img src="{{ url_for('static',filename='img/my pic.jpg') }}"alt="Adith K.K" class="round-image">
         <br><br>
         <h1>Hey, I'm <span style="color: blue;">ADITH</span></h1>
         <div class="typewriter">I'm a Web Developer</div>
     </div>
     
 
-            <!-- My About -->
+        
 
     <section id="about" class="text-center py-5">
         <div class="container1">
@@ -299,7 +238,7 @@ html, body {
         </div>
     </section>
 
-        <!-- My Skills -->
+   
 
     <section id="skills" class="skills-section">
         <h2 class="mb-4"><i class="bi bi-laptop"></i> Skills</h2>
@@ -369,7 +308,6 @@ html, body {
     </section>
 
 
-        <!-- my education -->
 
   
     <section id="education1" class="py-5">
@@ -421,7 +359,7 @@ html, body {
     </section>
 
 
-        <!-- my contact -->
+      
 
 
     <section id="contact" class="py-5">
@@ -456,7 +394,7 @@ html, body {
     </section>
     
 
-    <!-- footer -->
+  
 
     <footer class="footer">
         <p>&copy; Adith.k.k. All rights reserved.</p>
@@ -466,5 +404,6 @@ html, body {
 
 </body>
 </html>
+
 
 

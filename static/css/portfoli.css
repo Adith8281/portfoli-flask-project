@@ -1,5 +1,5 @@
 body {
-    background: url('img/keyboard.jpg') no-repeat center center/cover;
+    background: url('../img/keyboard.jpg') no-repeat center center/cover;
     text-align: center;
     font-family: "Times New Roman", serif;
     color: white;
@@ -93,7 +93,7 @@ h1 {
 }
 
 .container1 {
-    background: url('img/about.webp') no-repeat center center/cover;
+    background: url('../img/about.webp') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +123,7 @@ margin: 0;
 .skill-container {
 position: relative;
 bottom: 110px;
-background-image: url(img/OPI.jpg);
+background-image: url('../img/OPI.jpg');
 max-width: 100%;
 height: 100vh;
 background-size: cover; 
@@ -162,7 +162,7 @@ width: 50%;
 
 
 .container11 {
-background-image: url('img/education.jpg');
+background-image: url('../img/education.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -224,7 +224,7 @@ padding: 20px;
 align-items: center;
 position: relative;
 bottom: 300px;
-background-image: url(img/old-contact.webp);
+background-image: url('../img/old-contact.webp');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -233,7 +233,7 @@ height: 100vh;
 }
 
 .footer{
-background-image: url('img/footer.webp');
+background-image: url('../img/footer.webp');
 background-size: cover;
 background-position: center; 
 color: white; 
